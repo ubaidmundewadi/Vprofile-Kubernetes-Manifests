@@ -6,9 +6,9 @@ spec:
   selector:
     app: vproapp
   ports:
-  - port: 8080
+  - port: 80
     targetPort: vproapp-port
     protocol: TCP
-    nodePort: 30080  # Specify the port here if needed (optional)
-  type: NodePort
+  type: LoadBalancer
+
 
